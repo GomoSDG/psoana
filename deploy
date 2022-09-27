@@ -1,0 +1,4 @@
+#! /bin/bash
+set -e
+echo "Deploying $1"
+ansible-playbook "ansible-playbooks/deploy/$1.yml"
