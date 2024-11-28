@@ -1,7 +1,6 @@
 #! /bin/bash
 set -e
-echo "Building $1"
+echo "Building $1 project..."
 #npm run deploy --prefix=ui/shared
 #rsync ui/shared/dist/ "bases/$1/resources/$1/assets"
-npm run deploy --prefix="ui"
 clojure -T:build uberjar :project $1

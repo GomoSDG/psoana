@@ -12,12 +12,27 @@
                                hiccup/hiccup                {:mvn/version "1.0.5"}
                                ring/ring                    {:mvn/version "1.9.0"}
                                funcool/cuerdas              {:mvn/version "2022.03.27-397"}
-                               com.draines/postal            {:mvn/version "2.0.5"}
+                               com.draines/postal           {:mvn/version "2.0.5"}
 
-                               poly/loyalty {:local/root "bases/loyalty"}
-                               poly/db      {:local/root "merero-components/db"}
-                               poly/cqrs    {:local/root "merero-components/cqrs"}
-                               poly/pubsub  {:local/root "merero-components/pubsub"}}}
+                               poly/loyalty             {:local/root "bases/loyalty"}
+                               poly/db                  {:local/root "merero-components/db"}
+                               poly/cqrs                {:local/root "merero-components/cqrs"}
+                               poly/pubsub              {:local/root "merero-components/pubsub"}
+                               poly/roles               {:local/root "merero-components/middleware"}
+                               poly/hiccup-components   {:local/root "merero-components/hiccup-components"}
+                               poly/hiccup-elements     {:local/root "merero-components/hiccup-elements"}
+                               poly/rewards             {:local/root "components/rewards"}
+                               poly/views               {:local/root "./components/views"}
+                               poly/bulma-views         {:local/root "merero-components/bulma-views"}
+                               poly/questionnaires      {:local/root "merero-components/questionnaires"}
+                               poly/utils               {:local/root "merero-components/utils"}
+                               poly/forms               {:local/root "merero-components/forms"}
+                               poly/jobs                {:local/root "merero-components/jobs"}
+                               poly/users               {:local/root "components/users"}
+                               poly/graphics            {:local/root "merero-components/graphics"}
+
+                               ;; jars
+                               jars/tess4j              {:local/root "jars/tess4j-3.4.8.jar"}}}
 
             :test {:extra-paths []}
 

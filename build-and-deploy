@@ -1,4 +1,5 @@
 #! /bin/bash
 set -e
+./build-ui $1
 ./build $1
 ./deploy $1

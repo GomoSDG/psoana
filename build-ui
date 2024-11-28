@@ -1,0 +1,6 @@
+#! /bin/bash
+set -e
+echo "Building UI Assets..."
+npm run --silent build --prefix="ui"
+echo "Copying UI Assets to $1 base..."
+rsync -a ui/dist/ "bases/$1/resources/$1/assets/"

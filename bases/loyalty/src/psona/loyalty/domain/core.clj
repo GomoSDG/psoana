@@ -1,2 +1,1 @@
-(ns psona.loyalty.domain.core
-  (:require []))
+(ns psona.loyalty.domain.core)
